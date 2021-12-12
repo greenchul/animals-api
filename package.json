@@ -1,0 +1,24 @@
+{
+  "name": "express-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "node utils/create-database.js",
+    "start": "nodemon -r dotenv/config index.js",
+    "test": "mocha 'tests/cat.test.js' --timeout 6000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "mocha": "^9.1.3",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.6"
+  }
+}
